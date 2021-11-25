@@ -5,6 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Systemedia Gatsby Test",
+    description: "I build a Site based on JavaScript, React, GraphQL and Gatsby",
+    author: "Marco/Systemedia",
+  },
   plugins: ["gatsby-plugin-sass"],
 }
