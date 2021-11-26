@@ -14,16 +14,11 @@ class Services extends Component {
                 title: 'Webdesign', 
                 text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nisi maxime beatae harum debitis, dolore dolor ab facilis ipsum dicta optio iste qui, esse vero veritatis! Odio debitis nostrum mollitia?',  
             },
-            { 
-                id: 2, 
-                icon: 'iconPath', 
-                title: 'Grafikdesign', 
-                text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nisi maxime beatae harum debitis, dolore dolor ab facilis ipsum dicta optio iste qui, esse vero veritatis! Odio debitis nostrum mollitia?',  
-            },
         ]
         const serviceName = serviceContent.map((d) => <h1 key={d.title}>{d.title}</h1>);
         const serviceDescription = serviceContent.map((d) => <p key={d.text}>{d.text}</p>);
-    
+        // -> Richtiges Content mapping abchecken https://www.taniarascia.com/getting-started-with-react/
+
         return(
             <div className={serviceStyles.service}>
                 
@@ -31,6 +26,7 @@ class Services extends Component {
                     <div className={serviceStyles.serviceIcon}></div>
                     {serviceName}
                 </div>
+                
                 {serviceDescription}
             </div>
         )
