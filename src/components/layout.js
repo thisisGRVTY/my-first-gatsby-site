@@ -5,7 +5,7 @@ import "../styles/style.scss"
 
 const Layout = props => {
     return(
-        <div>
+        <div class="site-container">
             <Header />
             {props.children}
             <Footer />

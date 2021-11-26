@@ -59,41 +59,14 @@ $h5: clamp($font-xs, $font-xs + 1vw, $font-s);
 $h6: clamp($font-xs, $font-xs + 1vw, $font-s);
 $p: clamp($font-xs, $font-xs + 1vw, $font-s);
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $colorDark; 
-    flex-direction: column;
-}
-.nav {
-    $hue: 50;
-    $lght: 50;
-    padding: $size-1;
-    background: hsl($hue $sat $lght);
+footer {
+    padding: $size-1 $size-2 $size-1 $size-2;
+    background: hsl($hue $sat 0);
+    color:hsl($hue $sat $lght);
     width: 100%;
-    text-align: center;
-}
-.nav-link {
-    $lght: 75;
-    margin: 0 1rem;
-    color: hsl($hue $sat $lght);
-    text-decoration: none;
-}
-.nav-link:hover {
-    $lght: 100;
-    color: hsl($hue $sat $lght);
-}
-.nav-link:first-child {
-    margin: 0 $size-1 0 0;
-}
-.nav-link:last-child {
-    margin: 0 0 0 $size-1;
-}
-.logo {
-    font-weight: $font-900;
-    font-size: $font-m;
-    color: hsl($hue $sat $lght);
-    margin: $size-2 0;
-    text-transform: uppercase;
+
+    a {
+        color:hsl($hue $sat $lght);
+        text-decoration: none;
+    }
 }
