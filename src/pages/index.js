@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Services from "../components/services.js"
+/* import TextImage from "../components/textimage.js" */
 
 
 
@@ -21,6 +22,7 @@ const Index = () => {
     <Layout>
         <Hero heroContent={heroContent}/>
         <Services />
+        {/* <TextImage /> */}
     </Layout>
   )
 }

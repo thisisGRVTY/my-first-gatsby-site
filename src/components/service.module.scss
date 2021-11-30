@@ -56,24 +56,59 @@ $h4: clamp($font-s, $font-s + 1vw, $font-ms);
 $h5: clamp($font-xs, $font-xs + 1vw, $font-s);
 $h6: clamp($font-xs, $font-xs + 1vw, $font-s);
 $p: clamp($font-xs, $font-xs + 1vw, $font-s);
+
+.sectionTitle {
+    font-size: $font-lm;
+    line-height: 1.3;
+    padding: 0 $size-2 0 $size-2;
+    position: relative;
+}
+/* .sectionTitle::after {
+    $width: 50px;
+    $hue: 25;
+    $sat: 100;
+    background: hsl($hue $sat 50);
+    display: block;
+    content: '';
+    width: $width;
+    height: $width / 4;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+.service:nth-child(0) {
+    border: 0!important;
+}
+
 .service {
-    padding: $size-2;
+    padding: $size-3 $size-2;
+
+    // border-top: solid 2px hsl($hue $sat 90);
 
     .serviceIcon {
+        $hue: 25;
+        $sat: 100;
+        background: hsl($hue $sat 50);
         content: '';
         width: 40px;
         height: 40px;
-        background: hsl($hue $sat 50);
         border-radius: 50%;
         margin-right: $size-1;
     }
+
     .serviceTitle {
         display: flex;
         align-items: center;
-        margin-bottom: $size-2;
+        margin-bottom: $size-1;
+        line-height: 1;
+        text-transform: uppercase;
     }
-    
+
     .serviceDescription {
-        margin-bottom: $size-2;
+        color: hsl($hue $sat 35);
+        line-height: 1.6;
     }
+
 }
+
