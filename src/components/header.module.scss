@@ -65,6 +65,7 @@ $p: clamp($font-xs, $font-xs + 1vw, $font-s);
     align-items: center;
     background: $colorDark; 
     flex-direction: column;
+
 }
 .nav {
     $hue: 50;
@@ -72,7 +73,10 @@ $p: clamp($font-xs, $font-xs + 1vw, $font-s);
     padding: $size-1;
     background: hsl($hue $sat $lght);
     width: 100%;
-    text-align: center;
+    min-height: $size-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-link {
     $lght: 75;
@@ -94,6 +98,8 @@ $p: clamp($font-xs, $font-xs + 1vw, $font-s);
     font-weight: $font-900;
     font-size: $font-m;
     color: hsl($hue $sat $lght);
-    margin: $size-2 0;
     text-transform: uppercase;
+    min-height: $size-5;
+    display: flex;
+    align-items: center;
 }

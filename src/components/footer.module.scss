@@ -64,6 +64,9 @@ footer {
     background: hsl($hue $sat 0);
     color:hsl($hue $sat $lght);
     width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: $size-5;
 
     a {
         color:hsl($hue $sat $lght);

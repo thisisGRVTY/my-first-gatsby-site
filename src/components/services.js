@@ -1,36 +1,57 @@
-import React, { Component } from "react"
+import React from "react"
 import * as serviceStyles from "./service.module.scss" 
 
-class Services extends Component {
-    constructor (props){
-        super(props);
-    }
+function Services() {
 
-    render() {
-        const serviceContent = [
-            { 
-                id: 1, 
-                icon: 'iconPath', 
-                title: 'Headline', 
-                text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nisi maxime beatae harum debitis, dolore dolor ab facilis ipsum dicta optio iste qui, esse vero veritatis! Odio debitis nostrum mollitia?',  
-            },
-        ]
-        const serviceName = serviceContent.map((d) => <h1 key={d.title}>{d.title}</h1>);
-        const serviceDescription = serviceContent.map((d) => <p key={d.text}>{d.text}</p>);
-        // -> Richtiges Content mapping abchecken https://www.taniarascia.com/getting-started-with-react/
+  const services = [
+    { 
+      id: 1, 
+      title: 'Concept.', 
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde accusantium eligendi ab numquam perspiciatis eos praesentium at, vel culpa eius consequuntur veniam, exercitationem dolores asperiores? Illo possimus vel modi.', 
+  }, 
+  { 
+      id: 2, 
+      title: 'Design.', 
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde accusantium eligendi ab numquam perspiciatis eos praesentium at, vel culpa eius consequuntur veniam, exercitationem dolores asperiores? Illo possimus vel modi.', 
+  }, 
+  { 
+      id: 3, 
+      title: 'Print.', 
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde accusantium eligendi ab numquam perspiciatis eos praesentium at, vel culpa eius consequuntur veniam, exercitationem dolores asperiores? Illo possimus vel modi.', 
+  }, 
+  { 
+      id: 4, 
+      title: 'Publish.', 
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde accusantium eligendi ab numquam perspiciatis eos praesentium at, vel culpa eius consequuntur veniam, exercitationem dolores asperiores? Illo possimus vel modi.', 
+  }, 
+  ]
 
-        return(
+
+    const getServiceContent = services => {
+        let content = [];
+        for (let idx in services) {
+          const item = services[idx];
+          content.push(
+
             <div className={serviceStyles.service}>
-                
-                <div className={serviceStyles.serviceTitle}>
+              <div className={serviceStyles.serviceTitle}>
                     <div className={serviceStyles.serviceIcon}></div>
-                    {serviceName}
-                </div>
-                
-                {serviceDescription}
+                    <h1 key={item.id}>{item.title}</h1>
+              </div>
+              <p key={item.id} className={serviceStyles.serviceDescription}>{item.description}</p>
             </div>
-        )
+          );
+        }
+        return content;
     }
-}
+                                    
+    return (
+        <div>{getServiceContent(services)}</div>
+    );
+
+    
+  }
+
+
 
 export default Services
