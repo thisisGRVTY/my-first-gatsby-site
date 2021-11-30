@@ -11,7 +11,7 @@ class Services extends Component {
             { 
                 id: 1, 
                 icon: 'iconPath', 
-                title: 'Webdesign', 
+                title: 'Headline', 
                 text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nisi maxime beatae harum debitis, dolore dolor ab facilis ipsum dicta optio iste qui, esse vero veritatis! Odio debitis nostrum mollitia?',  
             },
         ]
