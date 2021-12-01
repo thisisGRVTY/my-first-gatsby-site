@@ -1,0 +1,45 @@
+@import '../styles/variables.scss';
+
+.eckdaten {
+    background: hsl($hue $sat 10);
+    color: white;
+    width: 100%;
+
+    h4 {
+        margin: 0;
+    }
+
+    .eckdatenContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: $size-4 0;
+
+        .eckdatenDescription {
+            margin-left: $size-2;
+        }
+    }
+
+    /* .eckdatenContent:nth-child(odd) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: $size-4 0;
+
+        .eckdatenDescription {
+            margin-right: $size-2;
+        }
+    }*/
+
+    .eckdatenContent:last-child {
+        margin: 0;
+    }
+
+    .eckdatenIcon {
+        content: '';
+        display: block;
+        width: $size-5;
+        height: $size-5;
+        background: hsl($hue $sat 50);
+    }
+}

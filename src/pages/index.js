@@ -2,7 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Services from "../components/services.js"
-/* import TextImage from "../components/textimage.js" */
+import TextImage from "../components/textimage.js"
+import Werte from "../components/werte.js"
+import Eckdaten from "../components/eckdaten.js"
+import Nachhaltig from "../components/nachhaltig.js"
+import AboutUs from "../components/about-us.js"
+import ContactUs from "../components/contact-us.js"
+import Portfolio from "../components/portfolio.js"
 
 
 
@@ -22,7 +28,13 @@ const Index = () => {
     <Layout>
         <Hero heroContent={heroContent}/>
         <Services />
-        {/* <TextImage /> */}
+        <TextImage />
+        <Werte />
+        <Eckdaten />
+        <Nachhaltig />
+        <AboutUs />
+        <ContactUs />
+        <Portfolio />
     </Layout>
   )
 }

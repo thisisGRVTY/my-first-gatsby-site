@@ -1,0 +1,19 @@
+@import '../styles/variables.scss';
+
+
+.textimageSection {
+    background: hsl($hue $sat 90);
+}
+
+
+.textimage {
+    content: '';
+    display: block;
+    height: $size-200;
+    background: hsl($hue $sat 50);
+    width: 100%;
+    margin-top: $size-2;
+    // width: 100vw;
+    // margin: -$size-2;
+    // margin-top: $size-2;
+}

@@ -7,9 +7,6 @@ const Hero = (props) => {
     const HeroImage = () => {
         return <div className={heroStyles.heroImage}></div>
     }
-    const HeroOverlay = () => {
-        return <div className={heroStyles.overlay}></div>
-    }
     
     const HeroContent = () => {
         
@@ -27,7 +24,6 @@ const Hero = (props) => {
     return(
         <div className={heroStyles.hero}>
             <HeroImage />
-            <HeroOverlay />
             <HeroContent />
         </div>
     )

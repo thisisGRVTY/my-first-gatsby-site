@@ -1,0 +1,16 @@
+@import '../styles/variables.scss';
+
+.about {
+    margin-bottom: $size-4;
+}
+
+.aboutContent {
+    margin: $size-2 0;
+
+    :last-child {
+        margin: 0;
+    }
+}
+.aboutContent:last-child {
+    margin: 0;
+}

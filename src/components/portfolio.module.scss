@@ -1,0 +1,28 @@
+@import '../styles/variables.scss';
+
+.portfolioImage {
+    display: block;
+    content: '';
+    background: hsl($hue $sat 50);
+    width: 100%;
+    height: $size-200;
+    margin: $size-2 0;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    :after {
+        display: block;
+        content: '';
+        
+    }
+}
+
+.portfolioImage:last-child {
+    margin: 0;
+}

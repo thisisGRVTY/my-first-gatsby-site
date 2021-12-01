@@ -1,0 +1,10 @@
+@import '../styles/variables.scss';
+
+.badge {
+    display: block;
+    content: '';
+    width: 100%;
+    height: $size-8;
+    background: hsl($hue $sat 50);
+    margin: $size-2 0 0 0;
+}

@@ -43,13 +43,12 @@ function Services() {
         for (let idx in services) {
           const item = services[idx];
           content.push(
-
             <div className={serviceStyles.service}>
               <div className={serviceStyles.serviceTitle}>
                     <div className={serviceStyles.serviceIcon}></div>
-                    <h1 key={item.id}>{item.title}</h1>
+                    <h3 className="title" key={item.id}>{item.title}</h3>
               </div>
-              <p key={item.id} className={serviceStyles.serviceDescription}>{item.description}</p>
+              <p className="text" key={item.id}>{item.description}</p>
             </div>
           );
         }
@@ -58,7 +57,7 @@ function Services() {
                                     
     return (
       <div className="section">
-        <h1 className={serviceStyles.sectionTitle}>Leistungen im Überblick</h1>
+        <h1 className="section-title">Leistungen im Überblick</h1>
         {getServiceContent(services)}
       </div>
     );

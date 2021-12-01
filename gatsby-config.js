@@ -10,5 +10,5 @@ module.exports = {
     description: "I build a Site based on JavaScript, React, GraphQL and Gatsby",
     author: "Marco/Systemedia",
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: ["gatsby-plugin-sass", `gatsby-plugin-sitemap`],
 }

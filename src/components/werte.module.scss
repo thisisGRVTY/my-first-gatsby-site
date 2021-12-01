@@ -1,0 +1,50 @@
+@import '../styles/variables.scss';
+
+
+.werteSection {
+    background: hsl($hue $sat 10);
+}
+.zitat {
+    margin-bottom: $size-2;
+}
+
+.werteContent {
+    margin: $size-4 0;
+}
+
+.skillbar {
+    display: flex;
+    flex-direction: column;
+    $width: 10px;
+    margin: $size-2 0;
+
+    .skillDescription {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: $size-1;
+
+        p {
+            font-size: $font-s;
+        }
+    }
+
+    .bar {
+        content: '';
+        display: block;
+        width: 100%;
+        height: $width;
+        background: hsl($hue $sat 90);
+    }
+
+    .barBG {
+        content: '';
+        display: block;
+        // width: 95%;
+        height: $width;
+        $hue: 25;
+        $sat: 95;
+        $lght: 50%;
+        background: hsl($hue $sat $lght);
+    }
+}

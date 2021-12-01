@@ -4,7 +4,9 @@ import * as footerStyles from "./footer.module.scss"
 const Footer = () => {
     return(
         <footer className={footerStyles.footer}>
-                &copy; {new Date().getFullYear().toString()}{" "} <a href="https://systemedia.de">by Systemedia</a>
+                <h4>
+                    <a href="https://systemedia.de"> &copy; {new Date().getFullYear().toString()}{" "} by Systemedia</a>
+                </h4>
         </footer>
     )
 }
