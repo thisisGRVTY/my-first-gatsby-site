@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------------------
+Paragraphs
+------------------------------------------------------------------------------*/
+
+.paragraph-large {
+    font-size: $font-m;
+    line-height:$line-height-large;
+}
+.paragraph-medium {
+    font-size: $font-s;
+    line-height:$line-height-medium;
+}
+.paragraph-small {
+    font-size: $font-xs;
+    line-height:$line-height-small;
+}
+.paragraph-large, .paragraph-medium, .paragraph-small {
+    margin-bottom: $size-2;
+}

@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------------------
+Tables
+------------------------------------------------------------------------------*/
+
+
+.table {
+    border-collapse: collapse;
+    margin: $size-2 0;
+    font-size: $font-xs;
+    font-family: $font-family;
+    min-width: 100%;
+    border: 2px solid hsl($hue $sat 0);
+    box-shadow: 0 0 $size-1 hsl($hue $sat 85);
+}
+.table thead tr {
+    background-color: hsl($hue $sat 0);
+    color: hsl($hue $sat $lght);
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: $size-1 $size-2;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid hsl($hue $sat 85);
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: hsl($hue $sat 95);
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid hsl($hue $sat 0);
+}
+
+.table tbody tr.active-row {
+    font-weight: $font-400;
+    color: hsl($hue $sat 0);
+}
+

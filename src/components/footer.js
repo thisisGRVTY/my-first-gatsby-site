@@ -5,7 +5,7 @@ const Footer = () => {
     return(
         <footer className={footerStyles.footer}>
                 <h4>
-                    <a href="https://systemedia.de"> &copy; {new Date().getFullYear().toString()}{" "} by Systemedia</a>
+                    <a href="#"> &copy; {new Date().getFullYear().toString()}{" "}</a>
                 </h4>
         </footer>
     )

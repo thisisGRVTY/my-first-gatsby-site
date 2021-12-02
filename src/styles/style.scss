@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600;900&display=swap');
 @import '../styles/variables.scss';
-
+@import '../styles/colors.scss';
+@import '../styles/reset.scss';
+@import '../styles/headings.scss';
+@import '../styles/paragraphs.scss';
+@import '../styles/list.scss';
+@import '../styles/table.scss';
+@import '../styles/buttons.scss';
+@import '../styles/links.scss';
 
 
 
 /*------------------------------------------------------------------------------
 BASIC
 ------------------------------------------------------------------------------*/
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -23,128 +22,11 @@ body {
     font-size: clamp($font-baseSize, $font-baseSize + 1vw, $font-baseLarger);
     line-height: $line-height;
     position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-x: hidden;
-    /*     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10fr 1fr; */
 }
-
-ul,
-li {
-    list-style-type: none;
-}
-
-
-/*------------------------------------------------------------------------------
-Headings
-------------------------------------------------------------------------------*/
-
-
-/* h1,h2,h3,h4,h5,h6{
-    margin: 0 0 var(--size-2) 0;
-} */
-
-h1,
-h2,
-h3 {
-    font-weight: $font-900;
-}
-
-h4,
-h5,
-h6 {
-    font-weight: $font-400;
-}
-
-h1 {
-    font-size: $h1;
-}
-
-h2 {
-    font-size: $h2;
-}
-
-h3 {
-    font-size: $h3;
-}
-
-h4 {
-    font-size: $h4;
-}
-
-h5 {
-    font-size: $h5;
-}
-
-h6 {
-    font-size: $h6;
-}
-
-
-
 
 section, .section {
+    padding: $size-4 0;
+}
+.section-wrapper {
     padding: $size-4 $size-2;
-}
-
-.sectionTitle {
-    font-size: $font-m;
-    line-height: 1.3;
-    padding: 0;
-    position: relative;
-    margin-bottom: $size-2;
-}
-
-.title {
-    font-size: $font-s;
-    letter-spacing: 2px;
-    font-weight: $font-900;
-    color: hsl($hue $sat 45);
-    padding: $size-1 0;
-    text-transform: uppercase;
-}
-
-
-
-.text {
-    color: hsl($hue $sat 40);
-}
-
-
-
-button, .btn {
-    border: none;
-    margin: 0;
-    padding: $size-1 $size-2;
-    text-decoration: none;
-    background: hsl($hue $sat 0);
-    color: #ffffff;
-    font-family: $font-family;
-    font-size: $font-s;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-button:hover,
-button:focus,
-.btn:hover,
-.btn:focus {
-    $hue: 25;
-    $sat: 95;
-    $lght: 50%;
-    background: hsl($hue $sat $lght);
-}
-
-
-button:active,
-.btn:active {
-    transform: scale(0.99);
 }
